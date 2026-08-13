@@ -1,4 +1,6 @@
 @import url('/protect-the-second-check/base.css');
 @import url('/protect-the-second-check/landing.css');
-@import url('/protect-the-second-check/calculator.css');
-@import url('/protect-the-second-check/responsive.css');
+@import url('/protect-the-second-check/widget.css');
+@import url('/protect-the-second-check/fields.css');
+@import url('/protect-the-second-check/results.css');
+@import url('/protect-the-second-check/mobile.css');
