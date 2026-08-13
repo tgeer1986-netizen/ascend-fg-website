@@ -8,7 +8,7 @@ export async function onRequestPost({request,env}){
     const endpoint=env.GHL_SECOND_CHECK_WEBHOOK_URL||env.FORM_ENDPOINT;
     if(!endpoint)return new Response('Online delivery is being configured.',{status:503});
     const page=request.headers.get('referer')||'';
-    const payload={campaign:'protect-second-check-v1',recipient:'tgeer@ascend-fg.com',full_name:`${data.first_name} ${data.last_name}`,submittedAt:new Date().toISOString(),estimated_gap:monthly*12*years,landing_page:page,...data};
+    const payload={type:'protect_second_check_lead',campaign:'protect-second-check-v1',recipient:'tgeer@ascend-fg.com',full_name:`${data.first_name} ${data.last_name}`,submittedAt:new Date().toISOString(),estimated_gap:monthly*12*years,landing_page:page,...data};
     const result=await fetch(endpoint,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});
     if(!result.ok)return new Response('Delivery failed.',{status:502});
     return Response.redirect(new URL('/protect-second-check/thank-you.html',request.url).toString(),303);
