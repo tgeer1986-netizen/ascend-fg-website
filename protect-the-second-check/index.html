@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protect the Second Check | Ascend Financial Group</title>
+  <meta name="description" content="Estimate the household income gap a surviving spouse could face and request life insurance options from Ascend Financial Group.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Could one surviving spouse keep the same home on one Social Security payment?">
+  <meta property="og:description" content="Use Ascend Financial Group's free household income-gap calculator, then request life insurance options designed around your family's needs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ascend-fg.com/assets/ascend-brand-banner.jpg">
+  <link rel="stylesheet" href="/protect-the-second-check/styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="shell nav-inner">
+      <a class="identity" href="/" aria-label="Ascend Financial Group home">
+        <img src="/assets/ascend-logo.png" alt="Ascend Financial Group logo">
+        <span><strong>ASCEND FINANCIAL GROUP</strong><small>FAITH • FAMILY • FREEDOM</small></span>
+      </a>
+      <span class="agency-label">Independent Insurance Agency</span>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">A free retirement-income protection review</p>
+          <h1>Could one surviving spouse keep the same home on one Social Security payment?</h1>
+          <p class="hero-copy">Many retired couples depend on two monthly Social Security payments. When one spouse dies, eligible retirement and survivor payments generally are not added together. The surviving spouse may receive the higher applicable amount, which can leave a meaningful monthly household-income gap.</p>
+          <div class="hero-actions">
+            <a class="button gold" href="#calculator">Calculate the Income Gap</a>
+            <a class="text-link" href="#how-it-works">See how life insurance may help</a>
+          </div>
+          <p class="source-note">Social Security eligibility and benefit amounts vary. <a href="https://www.ssa.gov/survivor/amount" target="_blank" rel="noreferrer">Review survivor-benefit information directly from the Social Security Administration.</a></p>
+        </div>
+
+        <aside class="example-card" aria-label="Example household income change">
+          <p class="card-label">Simple example</p>
+          <div class="check-row"><span>Monthly payment A</span><strong>$2,400</strong></div>
+          <div class="check-row"><span>Monthly payment B</span><strong>$1,300</strong></div>
+          <div class="total-row"><span>Household total today</span><strong>$3,700/mo</strong></div>
+          <div class="arrow" aria-hidden="true">↓</div>
+          <div class="survivor-row"><span>Potential survivor household income</span><strong>about $2,400/mo*</strong></div>
+          <div class="gap-row"><span>Potential monthly gap</span><strong>$1,300</strong></div>
+          <p class="fine-print">*Illustration only. Actual survivor benefits depend on Social Security rules, claiming age, work history and individual eligibility.</p>
+        </aside>
+      </div>
+    </header>
+
+    <section class="section light" id="how-it-works">
+      <div class="shell">
+        <p class="eyebrow dark">The overlooked senior-planning question</p>
+        <h2>Funeral costs are only one part of the risk.</h2>
+        <p class="lead">A surviving spouse may still have the same mortgage or rent, utilities, groceries, insurance and property expenses—but less monthly household income. A life insurance death benefit can provide money the beneficiary may use to create a temporary monthly bridge, pay final expenses, reduce debt or buy time to make thoughtful decisions instead of immediate ones.</p>
+        <div class="benefit-grid">
+          <article><span>01</span><h3>Identify the gap</h3><p>Estimate the smaller monthly payment that could disappear from the household budget.</p></article>
+          <article><span>02</span><h3>Choose a bridge period</h3><p>See what one, three, five, seven or ten years of that lost income could represent.</p></article>
+          <article><span>03</span><h3>Review insurance options</h3><p>A licensed independent agent can compare available life insurance options based on age, health, budget and goals.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="shell calculator-shell">
+        <div class="calculator-intro">
+          <p class="eyebrow">Protect the Second Check™</p>
+          <h2>Estimate the household income gap.</h2>
+          <p>This is an educational estimate—not a Social Security calculation and not a recommendation for a specific insurance amount.</p>
+        </div>
+
+        <div class="calculator-card">
+          <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+          <section class="calc-panel active" data-panel="calculator" aria-labelledby="calcHeading">
+            <h3 id="calcHeading">Start with the smaller monthly payment.</h3>
+
+            <div class="field-group">
+              <label for="householdStatus">Which best describes the household?</label>
+              <select id="householdStatus" name="household_status" required>
+                <option value="">Choose one</option>
+                <option value="both-receive">Both spouses currently receive Social Security</option>
+                <option value="one-receives">One receives Social Security and the other expects to</option>
+                <option value="not-sure">Not sure how survivor income would change</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="monthlyGap">Approximate amount of the smaller monthly payment</label>
+              <div class="money-input"><span>$</span><input id="monthlyGap" name="monthly_gap" type="number" min="100" max="10000" step="25" inputmode="decimal" placeholder="1,300" required></div>
+              <small>Use an estimate. Do not enter a Social Security number or account information.</small>
+            </div>
+
+            <fieldset class="field-group">
+              <legend>How long would you want to help replace that income?</legend>
+              <div class="choice-grid bridge-choices">
+                <label><input type="radio" name="bridge_years" value="1"><span>1 year</span></label>
+                <label><input type="radio" name="bridge_years" value="3"><span>3 years</span></label>
+                <label><input type="radio" name="bridge_years" value="5" checked><span>5 years</span></label>
+                <label><input type="radio" name="bridge_years" value="7"><span>7 years</span></label>
+                <label><input type="radio" name="bridge_years" value="10"><span>10 years</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-group">
+              <label for="impact">If the smaller payment stopped, how would normal household bills be affected?</label>
+              <select id="impact" name="income_impact" required>
+                <option value="">Choose one</option>
+                <option value="severe">The surviving spouse could not maintain the current household</option>
+                <option value="difficult">It would be difficult without major changes</option>
+                <option value="manageable">It would be manageable, but still noticeable</option>
+                <option value="minimal">Little or no financial impact</option>
+              </select>
+            </div>
+
+            <button class="button gold full" id="calculateButton" type="button">Show My Estimated Gap</button>
+            <p class="validation" id="calculatorValidation" role="alert"></p>
+          </section>
+
+          <section class="calc-panel" data-panel="result" aria-labelledby="resultHeading">
+            <p class="result-kicker">Your educational estimate</p>
+            <h3 id="resultHeading">Potential household income gap</h3>
+            <div class="result-amount" id="resultAmount">$0</div>
+            <p id="resultExplanation"></p>
+            <div class="result-breakdown">
+              <div><span>Monthly income at risk</span><strong id="monthlyResult">$0</strong></div>
+              <div><span>Bridge period selected</span><strong id="yearsResult">5 years</strong></div>
+              <div><span>Estimated annual gap</span><strong id="annualResult">$0</strong></div>
+            </div>
+            <p class="result-note">This number is not automatically the amount of life insurance needed. Existing savings, debts, final expenses, current coverage, eligibility and budget should all be considered.</p>
+            <button class="button gold full" id="continueButton" type="button">Show Me Life Insurance Options</button>
+            <button class="button ghost full" id="recalculateButton" type="button">Change My Estimate</button>
+          </section>
+
+          <section class="calc-panel" data-panel="qualification" aria-labelledby="qualificationHeading">
+            <p class="result-kicker">Private request</p>
+            <h3 id="qualificationHeading">Tell us what protection would be most useful.</h3>
+            <p class="form-intro">Your answers go directly to Ascend Financial Group. A licensed insurance agent will contact you about life insurance—not a government benefit.</p>
+
+            <form id="secondCheckForm" novalidate>
+              <input type="hidden" name="campaign" value="protect-the-second-check-v1">
+              <input type="hidden" name="source" value="website">
+              <input type="hidden" name="monthly_gap" id="formMonthlyGap">
+              <input type="hidden" name="bridge_years" id="formBridgeYears">
+              <input type="hidden" name="estimated_gap" id="formEstimatedGap">
+              <input type="hidden" name="household_status" id="formHouseholdStatus">
+              <input type="hidden" name="income_impact" id="formIncomeImpact">
+              <input type="hidden" name="lead_score" id="formLeadScore">
+              <input type="hidden" name="lead_tier" id="formLeadTier">
+              <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="field-group">
+                <label for="ageRange">Age range of the person considering coverage</label>
+                <select id="ageRange" name="age_range" required>
+                  <option value="">Choose one</option>
+                  <option value="45-54">45–54</option>
+                  <option value="55-64">55–64</option>
+                  <option value="65-74">65–74</option>
+                  <option value="75-80">75–80</option>
+                  <option value="81-85">81–85</option>
+                  <option value="86+">86 or older</option>
+                </select>
+              </div>
+
+              <fieldset class="field-group">
+                <legend>What would you most want the life insurance to help with?</legend>
+                <div class="choice-grid stacked">
+                  <label><input type="radio" name="primary_goal" value="replace-income" required><span>Help replace lost monthly household income</span></label>
+                  <label><input type="radio" name="primary_goal" value="income-and-final-expense"><span>Lost income plus funeral and final expenses</span></label>
+                  <label><input type="radio" name="primary_goal" value="debt-or-home"><span>Mortgage, rent or other household debt</span></label>
+                  <label><input type="radio" name="primary_goal" value="legacy"><span>Leave additional money to loved ones</span></label>
+                  <label><input type="radio" name="primary_goal" value="not-sure"><span>Not sure—help me compare options</span></label>
+                </div>
+              </fieldset>
+
+              <div class="two-column">
+                <div class="field-group">
+                  <label for="currentCoverage">Current life insurance</label>
+                  <select id="currentCoverage" name="current_coverage" required>
+                    <option value="">Choose one</option>
+                    <option value="none">No current coverage</option>
+                    <option value="some">Yes, but possibly not enough</option>
+                    <option value="adequate">Yes, likely enough</option>
+                    <option value="not-sure">Not sure</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="veteranHousehold">Veteran household?</label>
+                  <select id="veteranHousehold" name="veteran_household" required>
+                    <option value="">Choose one</option>
+                    <option value="veteran">Yes—veteran</option>
+                    <option value="spouse">Yes—spouse of a veteran</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="contactTime">When would you like a licensed agent to contact you?</label>
+                <select id="contactTime" name="contact_time" required>
+                  <option value="">Choose one</option>
+                  <option value="asap">As soon as possible</option>
+                  <option value="morning">Morning</option>
+                  <option value="afternoon">Afternoon</option>
+                  <option value="evening">Evening</option>
+                </select>
+              </div>
+
+              <div class="two-column">
+                <div class="field-group"><label for="firstName">First name</label><input id="firstName" name="first_name" autocomplete="given-name" required></div>
+                <div class="field-group"><label for="lastName">Last name</label><input id="lastName" name="last_name" autocomplete="family-name" required></div>
+              </div>
+
+              <div class="two-column">
+                <div class="field-group"><label for="phone">Mobile phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+                <div class="field-group"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              </div>
+
+              <div class="field-group">
+                <label for="state">State</label>
+                <select id="state" name="state" autocomplete="address-level1" required>
+                  <option value="">Choose a state</option>
+                  <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+                </select>
+              </div>
+
+              <label class="consent-box">
+                <input type="checkbox" name="consent" required>
+                <span>By checking this box and submitting, I provide my prior express written consent for Ascend Financial Group and its licensed insurance agents to call and text me at the number provided about life insurance, including through automated technology where permitted. Consent is not a condition of purchase. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. I understand I am requesting contact from a licensed insurance agent to discuss life insurance. See the <a href="/privacy/" target="_blank">Privacy Policy</a> and <a href="/terms/" target="_blank">Terms.</a></span>
+              </label>
+
+              <button class="button gold full" type="submit" id="submitButton">Yes—Show Me My Options</button>
+              <p class="validation" id="formValidation" role="alert"></p>
+              <div class="submission-message" id="submissionMessage" role="status" aria-live="polite"></div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light trust-section">
+      <div class="shell trust-grid">
+        <div>
+          <p class="eyebrow dark">Why Ascend</p>
+          <h2>Clear guidance from a veteran-led independent agency.</h2>
+          <p class="lead">Ascend Financial Group helps families compare life insurance options from available carriers based on their protection goals, eligibility and budget. There is no obligation to purchase.</p>
+        </div>
+        <div class="trust-points">
+          <p><strong>Independent guidance</strong><span>Options may be compared across multiple available insurance carriers.</span></p>
+          <p><strong>Private request</strong><span>Your information is sent to Ascend Financial Group for the life insurance review you requested.</span></p>
+          <p><strong>No government affiliation</strong><span>This is not a Social Security, VA, military or government program.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="identity footer-identity"><img src="/assets/ascend-logo.png" alt=""><span><strong>ASCEND FINANCIAL GROUP</strong><small>FAITH • FAMILY • FREEDOM</small></span></div>
+      <div><strong>Contact</strong><br><a href="mailto:tgeer@ascend-fg.com">tgeer@ascend-fg.com</a></div>
+      <div class="legal">Ascend Financial Group is an independent insurance agency. This website is an insurance solicitation. You may be contacted by a licensed insurance agent regarding life insurance. Ascend Financial Group is not affiliated with or endorsed by the Social Security Administration, U.S. Department of Veterans Affairs, Department of Defense, U.S. Armed Forces or any government agency. The calculator provides a general educational estimate only and does not calculate Social Security benefits, determine insurance need or guarantee eligibility. Product availability, rates, benefits and underwriting vary by carrier and state. No coverage exists until a policy is approved, issued and placed in force. <a href="/privacy/">Privacy Policy</a> • <a href="/terms/">Terms & Conditions</a></div>
+    </div>
+  </footer>
+
+  <script src="/protect-the-second-check/app.js" defer></script>
+</body>
+</html>
