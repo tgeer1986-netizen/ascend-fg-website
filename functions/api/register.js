@@ -12,7 +12,12 @@ export async function onRequestPost({request, env}) {
     const webinarLink = env.WEBINAR_LINK || '';
     const row = [registeredAt, webinarDate, body.name, body.phone, body.email, body.location, body.licensed, body.career, body.why, body.source, 'Registered', 'Pending', 'Pending', webinarLink, '', ''];
 
-    if (!env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !env.GOOGLE_PRIVATE_KEY || !env.ASCEND_SHEET_ID) throw new Error('Google Sheets backend is not configured');
+    if (env.FORM_ENDPOINT) {
+      const delivery=await fetch(env.FORM_ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({type:'recruiting_inquiry',recipient:'tgeer@ascend-fg.com',submittedAt:registeredAt,...body})});
+      if(!delivery.ok)throw new Error('Private delivery failed');
+      return json({ok:true,webinarDate});
+    }
+    if (!env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !env.GOOGLE_PRIVATE_KEY || !env.ASCEND_SHEET_ID) throw new Error('Private delivery is not configured');
     const accessToken = await getGoogleAccessToken(env.GOOGLE_SERVICE_ACCOUNT_EMAIL, env.GOOGLE_PRIVATE_KEY);
     const range = encodeURIComponent("'Webinar Registrations'!A:P");
     const sheetsUrl = `https://sheets.googleapis.com/v4/spreadsheets/${env.ASCEND_SHEET_ID}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
