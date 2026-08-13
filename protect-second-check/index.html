@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Protect the Second Check | Ascend Financial Group</title>
+  <meta name="description" content="Estimate the household income gap that may occur when a surviving spouse can no longer rely on two Social Security checks, then request life insurance options from Ascend Financial Group.">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    :root{--psc-blue:#0d2744;--psc-blue2:#163d65;--psc-gold:#d6a94b;--psc-cream:#fbf8f0;--psc-green:#1f6f4a}
+    body{background:#07121f}
+    .psc-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 15%,#214e7d88,transparent 38%),linear-gradient(135deg,#06111e 0%,#0b2239 56%,#07121f 100%)}
+    .psc-hero:after{content:"";position:absolute;inset:auto 0 0;height:4px;background:linear-gradient(90deg,transparent,var(--psc-gold),transparent)}
+    .psc-hero-grid{min-height:640px;padding:92px 0 86px;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;position:relative;z-index:1}
+    .psc-hero h1{font:800 clamp(44px,6vw,76px)/1.02 Georgia,serif;margin:14px 0 22px;max-width:850px}
+    .psc-hero p{font-size:19px;line-height:1.65;color:#d9e2eb;max-width:760px}
+    .psc-proof{display:grid;gap:12px;background:#ffffff0b;border:1px solid #ffffff24;border-radius:22px;padding:24px;box-shadow:0 28px 70px #0006}
+    .check-row{display:grid;grid-template-columns:1fr auto;gap:15px;align-items:center;padding:16px 18px;background:#ffffff0a;border-radius:14px;border:1px solid #ffffff18}
+    .check-row strong{font-size:18px}.check-row span{font-size:23px;font-weight:900;color:#f1cd7a}
+    .check-row.total{background:linear-gradient(135deg,#c99732,#efcc78);color:#080d13;border:0}.check-row.total span{color:#080d13}
+    .lost{opacity:.55;text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:#ff7a72}
+    .psc-section{padding:76px 0}.psc-light{background:var(--psc-cream);color:#111b25}
+    .psc-section h2{font:800 clamp(34px,5vw,54px)/1.05 Georgia,serif;margin:9px 0 16px}
+    .psc-lead{font-size:18px;line-height:1.65;color:#5f6874;max-width:850px}
+    .calculator-shell{max-width:900px;margin:32px auto 0;background:#fff;border-radius:24px;box-shadow:0 24px 70px #0002;border:1px solid #ddd8ca;overflow:hidden}
+    .calculator-head{padding:24px 28px;background:linear-gradient(135deg,#0b2239,#173f68);color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .calculator-head h3{margin:0;font:800 26px Georgia,serif}.calculator-head p{margin:5px 0 0;color:#cfdae5}
+    .step-dots{display:flex;gap:8px;white-space:nowrap}.step-dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#ffffff18;color:#c9d3df;font-weight:900}.step-dot.active{background:var(--psc-gold);color:#101820}
+    .calculator-body{padding:30px}
+    .form-step{display:none}.form-step.active{display:block}
+    .question{margin-bottom:20px}.question>label,.question>legend{display:block;font-weight:900;margin-bottom:9px;font-size:16px}.question small{display:block;color:#66717d;line-height:1.5;margin-top:7px}
+    .question input,.question select{width:100%;padding:14px;border:1px solid #c8ced6;border-radius:12px;font:inherit;background:#fff;color:#111}
+    .option-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.option{position:relative}.option input{position:absolute;opacity:0;pointer-events:none}.option label{display:block;padding:14px;border:1px solid #cbd1d8;border-radius:12px;background:#fff;cursor:pointer;font-weight:800;text-align:center}.option input:checked+label{border-color:#1c5f93;background:#eaf4fc;box-shadow:0 0 0 2px #1c5f9325}
+    .result-card{display:none;margin:24px 0;padding:25px;border-radius:18px;background:linear-gradient(135deg,#eaf4fc,#f7fafc);border:1px solid #bdd7e9}.result-card.show{display:block}.result-label{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:900;color:#426682}.result-number{font:900 clamp(42px,8vw,68px)/1 Georgia,serif;color:#0f3556;margin:8px 0}.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:17px}.result-stat{background:#fff;border:1px solid #d6e2eb;border-radius:12px;padding:14px}.result-stat b{display:block;font-size:20px;color:#173f68}
+    .btn-row{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;margin-top:24px}.psc-btn{border:0;border-radius:12px;padding:15px 20px;font:900 16px inherit;cursor:pointer}.psc-btn.primary{background:linear-gradient(135deg,#efca72,#a97219);color:#111}.psc-btn.secondary{background:#edf0f3;color:#25303a}.psc-btn:disabled{opacity:.55;cursor:not-allowed}
+    .fit-note{display:none;border-radius:14px;padding:18px;background:#fff5e7;border:1px solid #efd3a8;color:#6b4816;margin-top:17px}.fit-note.show{display:block}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full{grid-column:1/-1}
+    .consent{display:flex;gap:11px;font-size:12px;line-height:1.55;color:#59636d;margin-top:12px}.consent input{width:auto;margin-top:3px;flex:0 0 auto}
+    .notice{display:none;padding:14px;border-radius:12px;margin-bottom:18px}.notice.success{display:block;background:#e8f7ee;color:#165c39}.notice.error{display:block;background:#fff0ed;color:#8b2b21}
+    .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}.trust-card{background:#fff;border:1px solid #ded9ce;border-radius:16px;padding:23px}.trust-card h3{font:800 22px Georgia,serif;margin:0 0 9px}.trust-card p{color:#626c75;line-height:1.6;margin:0}
+    .disclaimer{font-size:12px;line-height:1.65;color:#6f7881;background:#f3f1eb;border-radius:14px;padding:18px;margin-top:28px;border:1px solid #dedad1}
+    .micro{font-size:12px;color:#9fb0c0;line-height:1.6;margin-top:14px}
+    .hp{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+    @media(max-width:800px){.psc-hero-grid{grid-template-columns:1fr;padding:68px 0 70px}.psc-proof{order:2}.option-grid,.contact-grid,.trust-grid,.result-grid{grid-template-columns:1fr}.calculator-head{align-items:flex-start;flex-direction:column}.calculator-body{padding:22px}.full{grid-column:auto}}
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="shell navin">
+    <a class="identity" href="/">
+      <img class="mark" src="/assets/ascend-logo.png" alt="Ascend Financial Group logo">
+      <div><div class="brand">ASCEND FINANCIAL GROUP</div><div class="tag">FAITH • FAMILY • FREEDOM</div></div>
+    </a>
+    <div class="links"><a href="#how">How It Works</a><a class="button" href="#calculator">Calculate the Gap</a></div>
+  </div>
+</nav>
+
+<header class="psc-hero">
+  <div class="shell psc-hero-grid">
+    <div>
+      <div class="eyebrow">Senior household income protection</div>
+      <h1>Could one lost monthly check force a major change?</h1>
+      <p>Many retired couples build their household budget around two Social Security checks. After one spouse dies, the surviving spouse may receive the higher applicable benefit—not both checks—so monthly household income can fall sharply.</p>
+      <p><strong>Life insurance can create a separate pool of money the surviving spouse may use as a monthly allowance while adjusting financially.</strong></p>
+      <div class="actions"><a class="button gold" href="#calculator">Calculate a 3–10 Year Income Gap</a></div>
+      <div class="micro">This is an educational life-insurance offer from an independent insurance agency. It is not a Social Security benefit or government program.</div>
+    </div>
+    <div class="psc-proof" aria-label="Example household income change">
+      <div class="eyebrow">A simple example</div>
+      <div class="check-row"><strong>Larger monthly check</strong><span>$2,400</span></div>
+      <div class="check-row"><strong>Smaller monthly check</strong><span>$1,300</span></div>
+      <div class="check-row total"><strong>Household income today</strong><span>$3,700/mo</span></div>
+      <div class="check-row"><strong>Potential income no longer available</strong><span class="lost">$1,300/mo</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="psc-section psc-light" id="how">
+  <div class="shell">
+    <div class="eyebrow">Protect the Second Check</div>
+    <h2>Turn a vague concern into a clear number.</h2>
+    <p class="psc-lead">Estimate the amount of household income that could be missing over several years. Then decide whether you want a licensed Ascend insurance professional to explain life-insurance options designed around that gap.</p>
+
+    <div class="calculator-shell" id="calculator">
+      <div class="calculator-head">
+        <div><h3>Surviving-Spouse Income Gap Calculator</h3><p>About two minutes. No medical questions.</p></div>
+        <div class="step-dots" aria-label="Form progress"><span class="step-dot active">1</span><span class="step-dot">2</span><span class="step-dot">3</span></div>
+      </div>
+      <div class="calculator-body">
+        <div data-notice class="notice" aria-live="polite"></div>
+        <form id="second-check-form" novalidate>
+          <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+
+          <section class="form-step active" data-step="1">
+            <div class="question">
+              <legend>Does your household currently receive two Social Security checks?</legend>
+              <div class="option-grid">
+                <div class="option"><input id="two-yes" type="radio" name="twoChecks" value="yes" required><label for="two-yes">Yes, we receive two</label></div>
+                <div class="option"><input id="two-no" type="radio" name="twoChecks" value="no"><label for="two-no">No / not yet</label></div>
+              </div>
+              <small>The calculator is specifically designed for households currently budgeting around two monthly checks.</small>
+            </div>
+            <div class="fit-note" id="fit-note">This calculator may not match your current situation. Ascend can still help with final expense, mortgage, legacy, or income-protection questions through our <a href="/#quote"><strong>general life-insurance request</strong></a>.</div>
+            <div class="question">
+              <label for="smallerCheck">About how much is the smaller monthly check?</label>
+              <input id="smallerCheck" name="smallerCheck" type="number" min="100" max="10000" step="25" inputmode="decimal" placeholder="Example: 1300" required>
+              <small>An estimate is fine. This amount is used only to illustrate a possible household income gap.</small>
+            </div>
+            <div class="question">
+              <legend>How long would you want to help offset that monthly loss?</legend>
+              <div class="option-grid">
+                <div class="option"><input id="years-3" type="radio" name="years" value="3" required><label for="years-3">3 years</label></div>
+                <div class="option"><input id="years-5" type="radio" name="years" value="5"><label for="years-5">5 years</label></div>
+                <div class="option"><input id="years-7" type="radio" name="years" value="7"><label for="years-7">7 years</label></div>
+                <div class="option"><input id="years-10" type="radio" name="years" value="10"><label for="years-10">10 years</label></div>
+              </div>
+            </div>
+            <div class="result-card" id="result-card" aria-live="polite">
+              <div class="result-label">Estimated household income gap</div>
+              <div class="result-number" id="gap-result">$0</div>
+              <div>This illustrates <strong id="monthly-result">$0 per month</strong> for <strong id="years-result">0 years</strong>.</div>
+              <div class="result-grid">
+                <div class="result-stat"><span>Monthly amount at risk</span><b id="monthly-stat">$0</b></div>
+                <div class="result-stat"><span>Estimated total gap</span><b id="gap-stat">$0</b></div>
+              </div>
+              <small>This is not an SSA benefit determination, insurance quote, or recommendation. Actual survivor benefits and insurance eligibility vary.</small>
+            </div>
+            <div class="btn-row"><span></span><button class="psc-btn primary" type="button" data-next="2">Calculate My Gap</button></div>
+          </section>
+
+          <section class="form-step" data-step="2">
+            <div class="question">
+              <legend>If the smaller check stopped, how difficult would normal household expenses become?</legend>
+              <div class="option-grid">
+                <div class="option"><input id="difficulty-yes" type="radio" name="difficulty" value="difficult" required><label for="difficulty-yes">Very difficult</label></div>
+                <div class="option"><input id="difficulty-some" type="radio" name="difficulty" value="somewhat"><label for="difficulty-some">Somewhat difficult</label></div>
+                <div class="option"><input id="difficulty-no" type="radio" name="difficulty" value="manageable"><label for="difficulty-no">We could manage</label></div>
+                <div class="option"><input id="difficulty-unsure" type="radio" name="difficulty" value="unsure"><label for="difficulty-unsure">Not sure</label></div>
+              </div>
+            </div>
+            <div class="question">
+              <legend>Do you already have life insurance specifically intended to replace this monthly income?</legend>
+              <div class="option-grid">
+                <div class="option"><input id="coverage-no" type="radio" name="existingCoverage" value="no" required><label for="coverage-no">No</label></div>
+                <div class="option"><input id="coverage-some" type="radio" name="existingCoverage" value="some"><label for="coverage-some">Some, but likely not enough</label></div>
+                <div class="option"><input id="coverage-yes" type="radio" name="existingCoverage" value="yes"><label for="coverage-yes">Yes</label></div>
+                <div class="option"><input id="coverage-unsure" type="radio" name="existingCoverage" value="unsure"><label for="coverage-unsure">Not sure</label></div>
+              </div>
+            </div>
+            <div class="question">
+              <label for="ageRange">Age range of the person being considered for coverage</label>
+              <select id="ageRange" name="ageRange" required>
+                <option value="">Choose one</option><option>55–59</option><option>60–64</option><option>65–69</option><option>70–74</option><option>75–80</option><option>81+</option>
+              </select>
+            </div>
+            <div class="question">
+              <label for="veteranStatus">Military connection</label>
+              <select id="veteranStatus" name="veteranStatus" required>
+                <option value="">Choose one</option><option value="veteran">Veteran</option><option value="spouse">Spouse of a veteran</option><option value="none">Neither</option>
+              </select>
+            </div>
+            <div class="btn-row"><button class="psc-btn secondary" type="button" data-back="1">Back</button><button class="psc-btn primary" type="button" data-next="3">See Life-Insurance Options</button></div>
+          </section>
+
+          <section class="form-step" data-step="3">
+            <div class="question"><h3 style="font:800 28px Georgia,serif;margin:0 0 8px">Request a personalized conversation</h3><p style="margin:0;color:#63707c;line-height:1.6">A licensed Ascend insurance professional will review the information and contact you about life-insurance options. No coverage is guaranteed.</p></div>
+            <div class="contact-grid">
+              <div class="question"><label for="firstName">First name</label><input id="firstName" name="firstName" autocomplete="given-name" required></div>
+              <div class="question"><label for="lastName">Last name</label><input id="lastName" name="lastName" autocomplete="family-name" required></div>
+              <div class="question"><label for="phone">Mobile phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+              <div class="question"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div class="question"><label for="state">State</label><input id="state" name="state" maxlength="2" autocomplete="address-level1" placeholder="OH" required></div>
+              <div class="question"><label for="contactTime">Best time to contact you</label><select id="contactTime" name="contactTime" required><option value="">Choose one</option><option value="asap">As soon as possible</option><option value="morning">Morning</option><option value="afternoon">Afternoon</option><option value="evening">Evening</option></select></div>
+              <div class="question full"><label class="consent"><input name="consent" type="checkbox" required><span>By checking this box and submitting, I confirm that I am requesting information about life insurance and agree that Ascend Financial Group and its licensed insurance professionals may call, email, or text me at the contact information provided, including through automated technology. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of purchase. See the <a href="/privacy/"><strong>Privacy Policy</strong></a> and <a href="/terms/"><strong>Terms</strong></a>.</span></label></div>
+            </div>
+            <div class="btn-row"><button class="psc-btn secondary" type="button" data-back="2">Back</button><button class="psc-btn primary" type="submit">Send My Request</button></div>
+          </section>
+        </form>
+      </div>
+    </div>
+
+    <div class="trust-grid">
+      <article class="trust-card"><h3>Clear purpose</h3><p>You know from the beginning that this is a request for life-insurance information—not a government benefit application.</p></article>
+      <article class="trust-card"><h3>Independent guidance</h3><p>Ascend Financial Group is an independent insurance agency. Availability, pricing, eligibility, and underwriting vary by carrier and state.</p></article>
+      <article class="trust-card"><h3>Veteran-led service</h3><p>Ascend is veteran-led and family focused. Veteran status is optional and does not create or guarantee a government benefit.</p></article>
+    </div>
+
+    <div class="disclaimer"><strong>Important:</strong> Ascend Financial Group is not affiliated with, endorsed by, or acting on behalf of the Social Security Administration, Department of Veterans Affairs, Department of Defense, U.S. Armed Forces, or any federal or state agency. Social Security rules and survivor-benefit amounts depend on individual circumstances. Life insurance does not replace, modify, increase, or continue Social Security benefits; it may provide a separate death benefit that a beneficiary can use to help offset a household-income loss. This calculator is educational only and is not financial, tax, legal, Social Security, or insurance advice.</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell footerin">
+    <div class="identity"><img class="mark" src="/assets/ascend-logo.png" alt=""><div><div class="brand">ASCEND FINANCIAL GROUP</div><div class="tag">FAITH • FAMILY • FREEDOM</div></div></div>
+    <div><strong>Independent Insurance Agency</strong><br><a href="mailto:tgeer@ascend-fg.com">tgeer@ascend-fg.com</a></div>
+    <div class="legal">Product availability, eligibility, rates, benefits, and terms vary by carrier and state. No coverage exists until an application is approved, issued, accepted, and any required premium is paid.<br><a href="/privacy/">Privacy Policy</a> • <a href="/terms/">Terms & Conditions</a></div>
+  </div>
+</footer>
+<script src="/assets/second-check.js"></script>
+</body>
+</html>
